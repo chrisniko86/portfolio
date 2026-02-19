@@ -1,0 +1,11 @@
+@media print {
+  .chrome--browser-top-container,
+  .chrome-browser-bottom-container,
+  .pdf-header-container,
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .pdf-inner-container {
+    padding: 25px;
+  }
+}

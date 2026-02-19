@@ -1,0 +1,28 @@
+@media only screen and (max-width: 600px) {
+  .navigation-wrapper {
+    width: 250px;
+    left: calc(50% - 250px / 2);
+  }
+
+  #header {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: unset;
+    column-gap: 2rem;
+    align-items: flex-start;
+  }
+
+  #intro {
+    border-left: unset;
+  }
+
+  #intro .paragraph {
+    padding-left: 0;
+    /* margin: 0 0 15px 0; */
+  }
+  #contact {
+    grid-template-columns: unset;
+    display: flex;
+    flex-direction: column;
+  }
+}
