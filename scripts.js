@@ -177,7 +177,7 @@ Computing Systems Engineering (Hons)`,
   ]
 };
 
-function renderWorkExperience(items, elementId) {
+function renderItems(items, elementId) {
   const html = items.data
     .map(
       (item) => `
@@ -192,5 +192,5 @@ function renderWorkExperience(items, elementId) {
   document.getElementById(elementId).innerHTML = html;
 }
 
-renderWorkExperience(myWorkExperience, 'work-expierence');
-renderWorkExperience(myEducation, 'education');
+renderItems(myWorkExperience, 'work-experience');
+renderItems(myEducation, 'education');
