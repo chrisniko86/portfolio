@@ -273,7 +273,7 @@ nav {
 .pdf-header-container {
   position: fixed;
   z-index: 1;
-  width: calc(100% - 34px);
+  width: calc(100% - 36px);
   background-color: #3f3f3f;
   padding: 10px 25px;
 }
