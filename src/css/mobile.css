@@ -4,6 +4,10 @@
     left: calc(50% - 250px / 2);
   }
 
+  .chrome-browser-bottom-container-left {
+    display: none;
+  }
+
   #header {
     display: flex;
     flex-direction: column;

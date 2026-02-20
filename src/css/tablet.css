@@ -1,2 +1,8 @@
 @media only screen and (max-width: 767px) {
+  .chrome-browser-bottom-container-left {
+    flex-basis: 11%;
+  }
+  .chrome-browser-bottom-container-left [class^='fa'] {
+    margin-right: 15px;
+  }
 }

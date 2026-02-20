@@ -12,6 +12,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+::-webkit-scrollbar {
+  border-bottom-right-radius: 8px;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -261,7 +265,7 @@ nav {
 /**  
   pdf styles section
  */
-.cv-in-pdf-content {
+.chrome-browser-content-container {
   position: relative;
   background-color: #282828;
   height: calc(100% - 88px);
@@ -273,9 +277,13 @@ nav {
 .pdf-header-container {
   position: fixed;
   z-index: 1;
-  width: calc(100% - 36px);
+  width: calc(100% - 20px);
   background-color: #3f3f3f;
   padding: 10px 25px;
+}
+
+.chrome-browser.fullscreen .pdf-header-container {
+  width: 100%;
 }
 
 .pdf-heading {
