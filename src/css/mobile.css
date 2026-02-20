@@ -18,11 +18,15 @@
 
   #intro .paragraph {
     padding-left: 0;
-    /* margin: 0 0 15px 0; */
   }
+
   #contact {
     grid-template-columns: unset;
     display: flex;
     flex-direction: column;
+  }
+
+  .pdf-inner-container {
+    padding: 25px;
   }
 }
