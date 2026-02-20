@@ -271,9 +271,8 @@ nav {
 }
 
 .pdf-header-container {
-  position: fixed;
-  z-index: 1;
-  width: calc(100% - 20px);
+  position: relative;
+  width: 100%;
   background-color: #3f3f3f;
   padding: 10px 25px;
 }
@@ -292,7 +291,7 @@ nav {
 .pdf-container {
   display: block;
   position: relative;
-  margin: 20px auto;
+  margin: 0px auto 20px auto;
   max-width: 767px;
 }
 
@@ -380,10 +379,6 @@ h2 {
 .item-description {
   font-size: 14px;
   color: #3f3f3f;
-}
-
-#page-one {
-  margin-top: 40px;
 }
 
 #page-one::before,
