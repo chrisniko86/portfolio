@@ -12,10 +12,6 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-::-webkit-scrollbar {
-  border-bottom-right-radius: 8px;
-}
-
 .container {
   width: 100%;
   height: 100%;
