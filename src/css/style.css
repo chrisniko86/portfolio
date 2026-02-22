@@ -79,7 +79,14 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: unset;
 }
+
+.chrome-browser.fullscreen .chrome-browser-content-container {
+  border-bottom-left-radius: unset;
+  background-origin: unset;
+}
+
 /**
   Chrome browser top container
  */
