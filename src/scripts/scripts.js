@@ -22,6 +22,8 @@ minimizeBrowser.addEventListener('click', () => {
 
 fullscreenBrowser.addEventListener('click', () => {
   chromeBrowser.classList.toggle('fullscreen');
+  fullscreenBrowser.classList.toggle('fa-regular');
+  fullscreenBrowser.classList.toggle('fa-solid');
   fullscreenBrowser.classList.toggle('fa-square');
   fullscreenBrowser.classList.toggle('fa-expand');
 });
