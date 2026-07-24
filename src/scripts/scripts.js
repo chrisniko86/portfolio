@@ -6,6 +6,8 @@ const minimizeBrowser = document.getElementById('toggle-minimize-browser');
 const fullscreenBrowser = document.getElementById('toggle-fullscreen-browser');
 const closeBrowser = document.getElementById('toggle-close-browser');
 
+const navigationWrapper = document.querySelector('.navigation-wrapper');
+
 chromeIcon.addEventListener('click', () => {
   chromeBrowser.classList.toggle('active');
   chromeIcon.classList.add('active');
@@ -14,10 +16,13 @@ chromeIcon.addEventListener('click', () => {
 closeTab.addEventListener('click', () => {
   chromeBrowser.classList.remove('active');
   chromeIcon.classList.remove('active');
+  chromeBrowser.classList.remove('fullscreen');
+  document.body.classList.remove('fullscreen-body-wrapper');
 });
 
 minimizeBrowser.addEventListener('click', () => {
   chromeBrowser.classList.toggle('active');
+  document.body.classList.remove('fullscreen-body-wrapper');
 });
 
 fullscreenBrowser.addEventListener('click', () => {
@@ -26,11 +31,14 @@ fullscreenBrowser.addEventListener('click', () => {
   fullscreenBrowser.classList.toggle('fa-solid');
   fullscreenBrowser.classList.toggle('fa-square');
   fullscreenBrowser.classList.toggle('fa-expand');
+  document.body.classList.toggle('fullscreen-body-wrapper');
 });
 
 closeBrowser.addEventListener('click', () => {
   chromeBrowser.classList.remove('active');
+  chromeBrowser.classList.remove('fullscreen');
   chromeIcon.classList.remove('active');
+  document.body.classList.remove('fullscreen-body-wrapper');
 });
 
 function renderItems(items, elementId) {

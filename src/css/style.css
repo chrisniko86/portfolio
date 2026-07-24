@@ -15,7 +15,7 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  background-image: url('../assets/background.jpg');
+  background-image: url('../../assets/background.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -32,7 +32,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
   width: 368px;
-  z-index: 0;
+  z-index: 1;
 }
 
 nav {
@@ -46,11 +46,12 @@ nav {
   display: block;
   width: 48px;
   height: 48px;
-  background-image: url('../assets/google_chrome_icon.svg');
+  background-image: url('../../assets/google_chrome_icon.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   cursor: pointer;
+  transition: transform 0.2s;
 }
 
 #chrome-browser-container-icon:hover,
@@ -58,9 +59,12 @@ nav {
   filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8));
 }
 
+#chrome-browser-container-icon:active {
+  transform: scale(0.85);
+}
+
 .chrome-browser {
   position: fixed;
-  display: none;
   top: 10px;
   left: 10px;
   width: calc(100% - 20px);
@@ -68,18 +72,38 @@ nav {
   background-color: #e0e0e0;
   border-radius: 8px;
   z-index: 1;
+  opacity: 0;
+  transform: scale(0.2);
+  transition: transform 0.35s ease;
+  pointer-events: none;
 }
 
 .chrome-browser.active {
-  display: block;
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
 }
 
 .chrome-browser.fullscreen {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 1px);
   border-radius: unset;
+}
+
+.fullscreen-body-wrapper {
+  overflow: hidden;
+}
+
+.fullscreen-body-wrapper .navigation-wrapper {
+  bottom: -54px;
+  transition: bottom 0.35s;
+  z-index: 2;
+}
+
+.fullscreen-body-wrapper .navigation-wrapper:hover {
+  bottom: 0;
 }
 
 .chrome-browser.fullscreen .chrome-browser-content-container {
