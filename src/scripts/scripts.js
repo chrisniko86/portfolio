@@ -113,10 +113,11 @@ members to create consistent, reusable and maintainable code.`
       url: 'https://www.intralot.com/',
       title: ' Front End Web Developer',
       duration: 'November 2019 – April 2022 (2 years 6 months)',
-      description: `Worked as part of the team in Eurobank web banking under Agile scrum methodology. I gained extensive
-experience as a ReactJS developer. The front end stack was ReactJS, Redux and redux-saga middleware.
-Performed unit testing for every feature I developed using mocha and chai. Worked closely with the team
-members to create consistent, reusable and maintainable code.`
+      description: `I worked at Intralot, a global provider of lottery solutions. My role involved front-end development using React
+(both class-based and functional components), Redux, and Less. During this time, I developed a comprehensive
+understanding of class-based components, including all lifecycle methods. In addition to Less, we also used
+Styled Components for styling. The whole experience significantly strengthened my problem-solving abilities and
+enhanced my attention to detail, enabling me to deliver pixel-perfect user interfaces.`
     },
     {
       company: ' DEUS EX MACHINA',
