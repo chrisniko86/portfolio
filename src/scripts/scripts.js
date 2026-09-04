@@ -42,7 +42,8 @@ closeBrowser.addEventListener('click', () => {
 });
 
 function renderItems(items, elementId) {
-  document.getElementById(elementId).innerHTML = items;
+  const el = document.getElementById(elementId);
+  el.innerHTML = items.join(', ');
 }
 
 const skills = [
@@ -88,14 +89,6 @@ renderItems(tools, 'tools');
 const myWorkExperience = {
   data: [
     {
-      company: 'Code.Hub',
-      url: 'https://codehub.com',
-      title: 'React Software Engineer',
-      duration: 'April 2022 – July 2025',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.'
-    },
-    {
       company: 'Code.Hub-Interamerican',
       url: 'https://www.interamerican.gr/en',
       title: 'React Software Engineer',
@@ -116,7 +109,7 @@ Performed unit testing for every feature I developed using mocha and chai. Worke
 members to create consistent, reusable and maintainable code.`
     },
     {
-      company: 'Intralot',
+      company: "Bally's Intralot",
       url: 'https://www.intralot.com/',
       title: ' Front End Web Developer',
       duration: 'November 2019 – April 2022 (2 years 6 months)',
@@ -132,10 +125,13 @@ members to create consistent, reusable and maintainable code.`
       duration: 'June 2017 – October 2019 (2 years 5 months)',
       description: `Designed and developed - in collaboration with the Lead Web Developer the Deus Ex Machina website and
 translated several other mock ups to front end code.
-• Exposed to Angular, Typescript and NodeJS by working on various other projects.`
+Contributed to AI-focused projects, primarily on the front end, developing responsive and scalable web interfaces for visualizing
+and managing large datasets. Designed and implemented complex data tables to present high volumes of information in a clear and
+intuitive way, with a strong focus on performance, usability, and UI consistency. 
+Worked with technologies including jQuery, Angular, TypeScript, and Node.js with express framework across various projects.`
     },
     {
-      company: ' growcreate.',
+      company: ' Growcreate.',
       url: 'https://growcreate.co.uk/',
       title: 'Front End Web Developer',
       duration: 'June 2016 – Nov. 2016 (6 months)',
@@ -156,7 +152,7 @@ with the Lead Front End Developer. `
       description: `Responsible for the translation of the designer’s Photoshop creations to front-end code.
 • Familiarized myself with company’s internal software framework and integrated the final result of each project
 into it.
-• Designed and developed a pixel perfect front end result by gaining exposure in Photoshop tools.
+• Designed and developed a pixel perfect front end result by gaining exposure in Adobe Photoshop tool.
 • Wrote maintainable, responsive, cross-browser code in HTML/CSS and jQuery following W3C Standards.
 • Examples of my work include kibworthgolfclub.co.uk and leasowegolfclub.co.uk. `
     }
