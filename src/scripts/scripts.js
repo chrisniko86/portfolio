@@ -175,7 +175,7 @@ modeling`
       title: `Undergraduate degree in Electronic
 Computing Systems Engineering (Hons)`,
       company: 'Higher Technological Educational Institute of Piraeus',
-      url: 'https://www.york.ac.uk/',
+      url: 'https://www.uniwa.gr/en/',
       description: `Thesis: ‘Design and Development of an Interactive Business Guide using Google Maps API (Implemented with
         PHP, JavaScript, MySQL, Google Maps API).
         Build an interactive web application where end users were able to search and register companies’ information
