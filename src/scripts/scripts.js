@@ -77,7 +77,7 @@ const tools = [
   'vsCode',
   'Gulp',
   'Google Maps API v2',
-  'Translate Figma (mock ups) to HTML/CSS(SCSS/SASS)/JavaScript',
+  'Translate Figma (mock ups) to HTML/CSS(Scss/Sass)/JavaScript',
   'Linux terminal',
   'Figma',
   'Sketch',
